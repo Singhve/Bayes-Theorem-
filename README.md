@@ -1,2 +1,8 @@
 # Bayes-Theorem-
 Performance comparison of Full Bayes and Naive Bayes classifier 
+
+We will evaluate the performance of the Full Bayes and Naive Bayes classiﬁer on the iris.txt.shuffled dataset . The dataset has 150 instances. Each instance has four numeric dimensions, and in addition to that, it has a categorical dimension, which is the class label. Over the entire datasets there are three distinct classes.
+Solve the following questions. You must use Python and the NumPy scientiﬁc computing package for the programming part of a question.
+1. Implement a python program that accepts a dataset as a command line parameter and generates a model ﬁle in the current directory. The model ﬁle contains: (i) the prior probabilities of each of the classes; (ii) the mean and the covariance matrix of each of the classes. Our objective is to use this model ﬁle to perform classiﬁcation using full Bayes classiﬁcation method. To ensure readability of the model ﬁle, please write all the numeric values using 2 digits after the decimal point. You can use build-in functions in the NumPy package for computing the mean and the covariance.
+2. Implement a python program that accepts a model ﬁle (output of Q1) and a test ﬁle as command line parameter. The test ﬁle has identical format of the train ﬁle. For each instance of the test ﬁle, the program outputs the predicted label. The program also prints a confusion matrix by comparing the true labels and predicted labels of all the instances.
+3. Now, we will use 3-fold cross-validation for assessing the performance of the classiﬁer. For this, make 3-folds of the ﬁle iris.txt.shuffled by considering 50 consecutive instances as one fold
